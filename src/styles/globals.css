@@ -24,6 +24,7 @@
 @layer base {
   html {
     scroll-behavior: smooth;
+    color-scheme: light;
   }
 
   body {
@@ -126,7 +127,16 @@
   }
 
   .text-gradient-gold {
-    @apply bg-gradient-to-r from-gold-dark via-gold to-gold-light bg-clip-text text-transparent;
+    @apply bg-gradient-to-r from-gold-dark via-gold to-gold-light bg-clip-text text-gold-dark;
+    -webkit-text-fill-color: transparent;
+  }
+
+  @media (prefers-color-scheme: dark) {
+    .text-gradient-gold {
+      @apply text-gold-light;
+      background: none;
+      -webkit-text-fill-color: currentColor;
+    }
   }
 
   .pattern-dots {
@@ -141,6 +151,14 @@
   .image-frame::before {
     content: "";
     @apply absolute inset-x-0 top-0 z-10 h-1 bg-gradient-to-r from-gold-dark via-gold to-gold-light;
+  }
+}
+
+@media (prefers-color-scheme: dark) {
+  body {
+    @apply bg-cream text-navy;
+    background-color: var(--color-cream);
+    color: var(--color-navy);
   }
 }
 

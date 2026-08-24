@@ -14,13 +14,15 @@ export function Footer() {
       <div className="relative mx-auto max-w-7xl px-4 py-16 sm:px-6 lg:px-8">
         <div className="grid gap-12 md:grid-cols-2 lg:grid-cols-4">
           <div className="lg:col-span-1">
-            <Image
-              src="/logo.webp"
-              alt={siteConfig.name}
-              width={180}
-              height={54}
-              className="mb-5 h-12 w-auto brightness-0 invert"
-            />
+            <div className="mb-5 inline-flex rounded-xl bg-white px-4 py-2.5 shadow-sm">
+              <Image
+                src="/logo.webp"
+                alt={siteConfig.name}
+                width={180}
+                height={54}
+                className="h-10 w-auto"
+              />
+            </div>
             <p className="text-sm leading-relaxed text-white/65">{siteConfig.description}</p>
             <p className="mt-3 text-sm text-gold-light/80">{siteConfig.marathi.tagline}</p>
             <Link
