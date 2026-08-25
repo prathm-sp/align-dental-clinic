@@ -24,7 +24,7 @@
 @layer base {
   html {
     scroll-behavior: smooth;
-    color-scheme: light;
+    color-scheme: light only;
   }
 
   body {
@@ -127,16 +127,25 @@
   }
 
   .text-gradient-gold {
-    @apply bg-gradient-to-r from-gold-dark via-gold to-gold-light bg-clip-text text-gold-dark;
-    -webkit-text-fill-color: transparent;
+    color: #a8883f;
   }
 
-  @media (prefers-color-scheme: dark) {
-    .text-gradient-gold {
-      @apply text-gold-light;
-      background: none;
-      -webkit-text-fill-color: currentColor;
-    }
+  .hero-section {
+    color-scheme: light only;
+    forced-color-adjust: none;
+  }
+
+  .hero-content h1,
+  .hero-content .hero-title-line {
+    color: #152d4a;
+  }
+
+  .hero-content .hero-title-accent {
+    color: #a8883f;
+  }
+
+  .hero-content p {
+    color: #3d5a78;
   }
 
   .pattern-dots {
