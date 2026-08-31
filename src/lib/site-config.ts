@@ -14,21 +14,21 @@ export const siteConfig = {
     registrationNo: "A-45270",
     education: [
       {
-        degree: "BDS",
-        institution: "Maharashtra University of Health Sciences (MUHS)",
-        focus: "Bachelor of Dental Surgery",
+        degree: "BDS (Bachelor of Dental Surgery)",
+        institution: "K.B.H. Dental College and Hospital, Nashik",
+        focus: "Graduated with a Bachelor of Dental Surgery",
       },
       {
-        degree: "MDS",
-        institution: "Maharashtra University of Health Sciences (MUHS)",
-        focus: "Orthodontics & Dentofacial Orthopedics",
+        degree: "MDS (Master of Dental Surgery)",
+        institution: "K M Shah Dental College And Hospital, Vadodara",
+        focus: "Orthodontics and Dentofacial Orthopaedics",
       },
     ],
     affiliations: [
       "Indian Orthodontic Society",
       "Maharashtra State Dental Council",
     ],
-    bio: "Dr. Aishwarya Aditya Mestry is a dedicated dental specialist with advanced MDS training in orthodontics and dentofacial orthopedics from MUHS. With a patient-first approach, she combines modern technology with compassionate care to deliver exceptional results for patients of all ages.",
+    bio: "Dr. Aishwarya Aditya Mestry is a dedicated dental specialist with a BDS from K.B.H. Dental College and Hospital, Nashik, and an MDS in Orthodontics and Dentofacial Orthopaedics from K M Shah Dental College And Hospital, Vadodara. With a patient-first approach, she combines modern technology with compassionate care to deliver exceptional results for patients of all ages.",
     extendedBio:
       "At Align Dental Clinic, Dr. Mestry leads a team committed to making quality dental care accessible and comfortable. From routine preventive care to complex orthodontic treatments, every patient receives personalized attention in a warm, modern environment equipped with high-quality instruments and digital diagnostics.",
   },
@@ -94,7 +94,7 @@ export const siteConfig = {
     {
       question: "What are your clinic timings?",
       answer:
-        "Align Dental Clinic is open Monday through Saturday, 11:00 AM to 7:00 PM. Walk-ins are welcome, but we recommend booking via WhatsApp or phone for a confirmed slot.",
+        "Align Dental Clinic is open Monday through Saturday, 11:00 AM to 7:00 PM. Walk-ins are welcome on weekdays, but we recommend booking via WhatsApp or phone. On Saturdays, please call before visiting to confirm availability.",
     },
   ],
 
@@ -125,6 +125,7 @@ export const siteConfig = {
       days: "Monday – Saturday",
       opens: "11:00",
       closes: "19:00",
+      saturdayNote: "Please call before visiting on Saturday",
     },
     mapsEmbedUrl:
       "https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3772.5!2d74.7363281!3d19.1216527!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3bdcbba6a522ba59%3A0xfe2d73f33acfb32!2sAlign%20Dental%20Clinic!5e0!3m2!1sen!2sin!4v1",
@@ -323,7 +324,7 @@ export const siteConfig = {
       category: "clinic",
     },
     {
-      src: "/images/hero-reception.webp",
+      src: "/images/clinic-reception.webp",
       alt: "Welcoming reception and waiting area at Align Dental Clinic",
       caption: "Reception & Waiting Area",
       category: "clinic",
@@ -335,7 +336,7 @@ export const siteConfig = {
       category: "clinic",
     },
     {
-      src: "/images/clinic-treatment-room-2.webp",
+      src: "/images/clinic-treatment-room-wide.webp",
       alt: "Spacious dental operatory at Align Dental Clinic",
       caption: "Operatory",
       category: "clinic",

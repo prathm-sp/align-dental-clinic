@@ -9,6 +9,7 @@ export function TrustBar() {
       icon: Clock,
       label: "Clinic Hours",
       value: `${contact.hours.days}: ${contact.hours.display}`,
+      note: contact.hours.saturdayNote,
     },
     {
       icon: MapPin,
@@ -49,6 +50,9 @@ export function TrustBar() {
               ) : (
                 <p className="mt-0.5 font-semibold text-white">{item.value}</p>
               )}
+              {"note" in item && item.note ? (
+                <p className="mt-1 text-xs font-medium text-gold-light/70">{item.note}</p>
+              ) : null}
             </div>
           </div>
         ))}

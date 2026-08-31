@@ -1,7 +1,7 @@
 import { siteConfig } from "@/lib/site-config";
+import Image from "next/image";
 import Link from "next/link";
 import { AnimatedSection } from "../shared/AnimatedSection";
-import { BeforeAfterSlider } from "../shared/BeforeAfterSlider";
 import { Section, SectionHeader } from "../ui/Section";
 
 export function SmileTransformations() {
@@ -18,7 +18,23 @@ export function SmileTransformations() {
       <div className="mt-14 grid gap-8 md:grid-cols-3">
         {siteConfig.transformations.map((item, index) => (
           <AnimatedSection key={item.src} delay={index * 0.1}>
-            <BeforeAfterSlider src={item.src} alt={item.alt} label={item.label} />
+            <div className="group overflow-hidden rounded-2xl border border-gold/20 bg-warm-white shadow-[var(--shadow-soft)] transition-all duration-300 hover:-translate-y-1 hover:border-gold/40 hover:shadow-[var(--shadow-card)]">
+              <div className="relative aspect-square w-full overflow-hidden bg-cream">
+                <Image
+                  src={item.src}
+                  alt={item.alt}
+                  fill
+                  sizes="(max-width: 768px) 100vw, 33vw"
+                  className="object-contain p-3 transition-transform duration-500 group-hover:scale-[1.02]"
+                />
+              </div>
+              <div className="border-t border-gold/15 px-5 py-4 text-center">
+                <p className="font-heading text-lg font-semibold text-navy">{item.label}</p>
+                <p className="mt-1 text-xs font-medium uppercase tracking-wider text-gold-dark">
+                  Before & After
+                </p>
+              </div>
+            </div>
           </AnimatedSection>
         ))}
       </div>

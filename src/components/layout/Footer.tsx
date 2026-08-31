@@ -81,6 +81,8 @@ export function Footer() {
                   {contact.hours.days}
                   <br />
                   {contact.hours.display}
+                  <br />
+                  <span className="text-gold-light/80">{contact.hours.saturdayNote}</span>
                 </span>
               </li>
             </ul>

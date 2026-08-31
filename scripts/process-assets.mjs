@@ -74,10 +74,10 @@ async function processNewPhotos() {
       desc: "Treatment room",
     },
     {
-      src: "IMG_8452.JPG.jpeg",
-      out: "clinic-treatment-room-2.webp",
+      src: "IMG_8455.JPG.jpeg",
+      out: "clinic-treatment-room-wide.webp",
       width: 1800,
-      desc: "Treatment room (wide)",
+      desc: "Treatment room (wide view)",
     },
     {
       src: "IMG_8456.JPG.jpeg",
@@ -125,7 +125,7 @@ async function processNewPhotos() {
 async function processHeroPhotos() {
   const heroPhotos = [
     {
-      src: "IMG_8451.JPG.jpeg",
+      src: "IMG_8455.JPG.jpeg",
       out: "hero-treatment-room.webp",
       aspectWidth: 3,
       aspectHeight: 4,
@@ -137,7 +137,7 @@ async function processHeroPhotos() {
       out: "hero-reception.webp",
       aspectWidth: 4,
       aspectHeight: 3,
-      position: "north",
+      position: "south",
       desc: "Reception (hero)",
     },
     {

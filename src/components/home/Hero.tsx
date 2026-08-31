@@ -1,17 +1,35 @@
 import { siteConfig } from "@/lib/site-config";
-import { MessageCircle, Phone, Sparkles } from "lucide-react";
+import { Info, MessageCircle, Phone, Sparkles } from "lucide-react";
 import Image from "next/image";
+
+const heroImages = [
+  {
+    src: "/images/clinic-treatment-room-wide.webp",
+    alt: "Modern dental treatment room at Align Dental Clinic",
+    label: "Treatment Room",
+  },
+  {
+    src: "/images/clinic-reception.webp",
+    alt: "Reception area at Align Dental Clinic",
+    label: "Reception",
+  },
+  {
+    src: "/images/clinic-exterior.webp",
+    alt: "Align Dental Clinic entrance in Ahilyanagar",
+    label: "Clinic Entrance",
+  },
+] as const;
 
 export function Hero() {
   return (
-    <section className="hero-section relative isolate min-h-[92vh] overflow-hidden bg-[#faf6ef] pt-28">
+    <section className="hero-section relative isolate overflow-hidden bg-[#faf6ef] pt-28 pb-16 lg:pb-24">
       <div className="grain-overlay bg-hero-gradient absolute inset-0" />
       <div className="pattern-dots absolute inset-0 opacity-60" />
       <div className="pointer-events-none absolute -right-40 top-20 h-[500px] w-[500px] rounded-full bg-gold/20 blur-[100px]" />
       <div className="pointer-events-none absolute -left-40 bottom-0 h-[400px] w-[400px] rounded-full bg-navy/8 blur-[80px]" />
 
-      <div className="relative mx-auto grid max-w-7xl items-center gap-12 px-4 py-12 sm:px-6 lg:grid-cols-2 lg:gap-16 lg:px-8 lg:py-20">
-        <div className="hero-content">
+      <div className="relative mx-auto max-w-7xl px-4 py-12 sm:px-6 lg:px-8 lg:py-16">
+        <div className="hero-content mx-auto max-w-3xl text-center lg:max-w-4xl">
           <div className="mb-6 inline-flex items-center gap-2 rounded-full border border-gold/40 bg-white px-4 py-2 shadow-sm">
             <Sparkles className="h-4 w-4 text-[#a8883f]" aria-hidden="true" />
             <span className="text-sm font-semibold tracking-wide text-[#152d4a]">
@@ -24,15 +42,15 @@ export function Hero() {
             <span className="hero-title-accent block">Now in Ahilyanagar</span>
           </h1>
 
-          <p className="mt-6 max-w-lg text-lg leading-relaxed sm:text-xl">
+          <p className="mx-auto mt-6 max-w-2xl text-lg leading-relaxed sm:text-xl">
             Advanced technology, expert orthodontic care, and patient-centred service —
             comprehensive dental treatments for your entire family.
           </p>
-          <p className="mt-3 max-w-lg text-base leading-relaxed opacity-80">
+          <p className="mx-auto mt-3 max-w-2xl text-base leading-relaxed opacity-80">
             {siteConfig.marathi.heroSubtitle}
           </p>
 
-          <div className="mt-10 flex flex-wrap gap-4">
+          <div className="mt-10 flex flex-wrap justify-center gap-4">
             <a
               href={siteConfig.contact.whatsappHref}
               target="_blank"
@@ -51,7 +69,20 @@ export function Hero() {
             </a>
           </div>
 
-          <div className="mt-10 flex items-center gap-4 border-t border-[#152d4a]/10 pt-8">
+          <p className="mx-auto mt-6 flex max-w-lg items-start gap-2 rounded-xl border border-gold/30 bg-white/80 px-4 py-3 text-left text-sm leading-relaxed text-[#3d5a78] shadow-sm backdrop-blur-sm">
+            <Info className="mt-0.5 h-4 w-4 shrink-0 text-gold-dark" aria-hidden="true" />
+            <span>
+              {siteConfig.contact.hours.saturdayNote}.{" "}
+              <a
+                href={siteConfig.contact.phoneHref}
+                className="font-semibold text-[#152d4a] underline decoration-gold/50 underline-offset-2 transition-colors hover:text-gold-dark"
+              >
+                {siteConfig.contact.phone}
+              </a>
+            </span>
+          </p>
+
+          <div className="mt-10 flex items-center justify-center gap-4 border-t border-[#152d4a]/10 pt-8">
             <div className="relative h-14 w-14 shrink-0 overflow-hidden rounded-full border-2 border-gold/40 shadow-md ring-2 ring-gold/20">
               <Image
                 src="/images/doctor-portrait.webp"
@@ -61,7 +92,7 @@ export function Hero() {
                 className="object-cover object-top"
               />
             </div>
-            <div>
+            <div className="text-left">
               <p className="font-heading text-lg font-semibold text-[#152d4a]">
                 {siteConfig.doctor.name}
               </p>
@@ -72,44 +103,29 @@ export function Hero() {
           </div>
         </div>
 
-        <div className="grid grid-cols-2 gap-4">
-          <div className="relative col-span-2 overflow-hidden rounded-2xl border-2 border-gold/30 shadow-[var(--shadow-card)] sm:col-span-1 sm:row-span-2">
-            <div className="absolute inset-x-0 top-0 z-10 h-1 bg-gradient-to-r from-gold-dark via-gold to-gold-light" />
-            <div className="relative aspect-[3/4] w-full sm:aspect-auto sm:h-full sm:min-h-[420px]">
-              <Image
-                src="/images/hero-treatment-room.webp"
-                alt="Modern dental treatment room at Align Dental Clinic"
-                fill
-                sizes="(max-width: 1024px) 50vw, 25vw"
-                className="object-cover object-center"
-                priority
-              />
+        <div className="mt-12 grid grid-cols-1 gap-5 sm:mt-14 sm:grid-cols-3 sm:gap-4 lg:mt-16 lg:gap-6">
+          {heroImages.map((image, index) => (
+            <div
+              key={image.src}
+              className="group flex flex-col overflow-hidden rounded-2xl border-2 border-gold/30 bg-cream shadow-[var(--shadow-card)] transition-all duration-300 hover:-translate-y-1 hover:border-gold/50 hover:shadow-[var(--shadow-soft)]"
+            >
+              <div className="relative aspect-[3/4] w-full bg-cream">
+                <div className="absolute inset-x-0 top-0 z-10 h-1 bg-gradient-to-r from-gold-dark via-gold to-gold-light" />
+                <Image
+                  src={image.src}
+                  alt={image.alt}
+                  fill
+                  unoptimized
+                  priority={index === 0}
+                  sizes="(max-width: 640px) 100vw, 33vw"
+                  className="object-contain p-3"
+                />
+              </div>
+              <p className="border-t border-gold/15 bg-warm-white px-4 py-3 text-center text-xs font-bold uppercase tracking-[0.14em] text-gold-dark">
+                {image.label}
+              </p>
             </div>
-          </div>
-          <div className="relative overflow-hidden rounded-2xl border-2 border-gold/30 shadow-[var(--shadow-card)]">
-            <div className="absolute inset-x-0 top-0 z-10 h-1 bg-gradient-to-r from-gold-dark via-gold to-gold-light" />
-            <div className="relative aspect-[4/3] w-full">
-              <Image
-                src="/images/hero-reception.webp"
-                alt="Reception area at Align Dental Clinic"
-                fill
-                sizes="(max-width: 1024px) 50vw, 25vw"
-                className="object-cover object-center"
-              />
-            </div>
-          </div>
-          <div className="relative overflow-hidden rounded-2xl border-2 border-gold/30 shadow-[var(--shadow-card)]">
-            <div className="absolute inset-x-0 top-0 z-10 h-1 bg-gradient-to-r from-gold-dark via-gold to-gold-light" />
-            <div className="relative aspect-[4/3] w-full">
-              <Image
-                src="/images/hero-exterior.webp"
-                alt="Align Dental Clinic entrance in Ahilyanagar"
-                fill
-                sizes="(max-width: 1024px) 50vw, 25vw"
-                className="object-cover object-top"
-              />
-            </div>
-          </div>
+          ))}
         </div>
       </div>
     </section>

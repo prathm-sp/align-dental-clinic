@@ -28,6 +28,7 @@ export function ContactInfo() {
       icon: Clock,
       label: "Hours",
       value: `${contact.hours.days}: ${contact.hours.display}`,
+      note: contact.hours.saturdayNote,
     },
     {
       icon: MapPin,
@@ -60,6 +61,9 @@ export function ContactInfo() {
             ) : (
               <p className="mt-0.5 font-semibold text-navy">{item.value}</p>
             )}
+            {"note" in item && item.note ? (
+              <p className="mt-1 text-sm text-navy-muted">{item.note}</p>
+            ) : null}
           </div>
         </Card>
       ))}
