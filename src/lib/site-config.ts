@@ -3,14 +3,15 @@ export const siteConfig = {
   shortName: "Align Dental",
   tagline: "Modern Dental Care, Now in Ahilyanagar!",
   description:
-    "Expert orthodontic and general dental care in Ahilyanagar. Advanced technology, patient-centred service, and comprehensive treatments for your entire family.",
+    "Comprehensive dental and orthodontic care in Ahilyanagar. Advanced technology, patient-centred service, and treatments for your entire family.",
   url: process.env.NEXT_PUBLIC_SITE_URL || "https://aligndentalclinic.com",
   locale: "en_IN",
 
   doctor: {
-    name: "Dr. Aishwarya Aditya Mestry",
-    credentials: "BDS (MUHS), MDS",
-    specialty: "Specialist in Orthodontics & Dentofacial Orthopedics",
+    name: "Dr. Aishwarya Mestry",
+    credentials:
+      "BDS (Bachelor of Dental Surgery), MDS (Orthodontics & Dentofacial Orthopaedics)",
+    specialty: "Comprehensive Dental Care & Orthodontics",
     registrationNo: "A-45270",
     education: [
       {
@@ -28,9 +29,9 @@ export const siteConfig = {
       "Indian Orthodontic Society",
       "Maharashtra State Dental Council",
     ],
-    bio: "Dr. Aishwarya Aditya Mestry is a dedicated dental specialist with a BDS from K.B.H. Dental College and Hospital, Nashik, and an MDS in Orthodontics and Dentofacial Orthopaedics from K M Shah Dental College And Hospital, Vadodara. With a patient-first approach, she combines modern technology with compassionate care to deliver exceptional results for patients of all ages.",
+    bio: "Dr. Aishwarya Mestry is a dedicated dentist with a BDS from K.B.H. Dental College and Hospital, Nashik, and an MDS in Orthodontics and Dentofacial Orthopaedics from K M Shah Dental College And Hospital, Vadodara. With a patient-first approach, she provides complete dental care — from preventive and restorative treatment to braces and aligners — combining modern technology with compassionate care for patients of all ages.",
     extendedBio:
-      "At Align Dental Clinic, Dr. Mestry leads a team committed to making quality dental care accessible and comfortable. From routine preventive care to complex orthodontic treatments, every patient receives personalized attention in a warm, modern environment equipped with high-quality instruments and digital diagnostics.",
+      "At Align Dental Clinic, Dr. Mestry leads a team committed to making quality dental care accessible and comfortable. From routine check-ups and fillings to root canals, implants, and orthodontic treatments, every patient receives personalised attention in a warm, modern environment equipped with high-quality instruments and digital diagnostics.",
   },
 
   social: {
@@ -94,14 +95,14 @@ export const siteConfig = {
     {
       question: "What are your clinic timings?",
       answer:
-        "Align Dental Clinic is open Monday through Saturday, 11:00 AM to 7:00 PM. Walk-ins are welcome on weekdays, but we recommend booking via WhatsApp or phone. On Saturdays, please call before visiting to confirm availability.",
+        "Align Dental Clinic is open Monday through Sunday, 11:00 AM to 7:00 PM. Walk-ins are welcome, but we recommend booking via WhatsApp or phone for a confirmed slot. On Saturday and Sunday, please call before visiting to confirm availability.",
     },
   ],
 
   marathi: {
     tagline: "आधुनिक दंतसेवा, आता अहिल्यानगरमध्ये!",
     heroSubtitle:
-      "प्रगत तंत्रज्ञान, तज्ञ ऑर्थोडॉन्टिक काळजी आणि रुग्ण-केंद्रित सेवा — आपल्या संपूर्ण कुटुंबासाठी.",
+      "प्रगत तंत्रज्ञान आणि रुग्ण-केंद्रित सेवा — तज्ञ दंत व ऑर्थोडॉन्टिक काळजी, आपल्या संपूर्ण कुटुंबासाठी.",
     bookAppointment: "अपॉइंटमेंट बुक करा",
   },
 
@@ -122,10 +123,10 @@ export const siteConfig = {
     },
     hours: {
       display: "11:00 AM – 7:00 PM",
-      days: "Monday – Saturday",
+      days: "Monday – Sunday",
       opens: "11:00",
       closes: "19:00",
-      saturdayNote: "Please call before visiting on Saturday",
+      saturdayNote: "Please call before visiting on Saturday and Sunday",
     },
     mapsEmbedUrl:
       "https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3772.5!2d74.7363281!3d19.1216527!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3bdcbba6a522ba59%3A0xfe2d73f33acfb32!2sAlign%20Dental%20Clinic!5e0!3m2!1sen!2sin!4v1",
@@ -300,8 +301,9 @@ export const siteConfig = {
       icon: "cpu",
     },
     {
-      title: "Expert Orthodontics",
-      description: "MDS-qualified specialist in orthodontics and dentofacial orthopedics.",
+      title: "Complete Dental Care",
+      description:
+        "BDS & MDS-qualified care covering general dentistry, orthodontics, and dentofacial orthopaedics.",
       icon: "award",
     },
     {

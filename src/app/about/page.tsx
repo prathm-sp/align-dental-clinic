@@ -10,7 +10,7 @@ import type { Metadata } from "next";
 
 export const metadata: Metadata = createMetadata({
   title: "About Dr. Aishwarya Mestry",
-  description: `Learn about ${siteConfig.doctor.name}, MDS specialist in orthodontics and dentofacial orthopedics at ${siteConfig.name}, Ahilyanagar.`,
+  description: `Learn about ${siteConfig.doctor.name}, BDS & MDS dentist providing comprehensive dental and orthodontic care at ${siteConfig.name}, Ahilyanagar.`,
   path: "/about",
 });
 

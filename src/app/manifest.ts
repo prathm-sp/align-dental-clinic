@@ -4,7 +4,7 @@ export default function manifest(): MetadataRoute.Manifest {
   return {
     name: "Align Dental Clinic",
     short_name: "Align Dental",
-    description: "Modern dental care in Ahilyanagar by Dr. Aishwarya Aditya Mestry",
+    description: "Modern dental care in Ahilyanagar by Dr. Aishwarya Mestry",
     start_url: "/",
     display: "standalone",
     background_color: "#FAF7F2",

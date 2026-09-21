@@ -16,7 +16,7 @@ export function AboutTeaser() {
             <div className="relative aspect-[4/5] w-full sm:aspect-[3/4]">
               <Image
                 src="/images/doctor-portrait.webp"
-                alt={`${doctor.name} — orthodontics specialist at Align Dental Clinic`}
+                alt={`${doctor.name} — dentist and orthodontist at Align Dental Clinic`}
                 fill
                 sizes="(max-width: 1024px) 100vw, 50vw"
                 className="object-cover object-top"

@@ -42,11 +42,14 @@ export function Hero() {
             <span className="hero-title-accent block">Now in Ahilyanagar</span>
           </h1>
 
-          <p className="mx-auto mt-6 max-w-2xl text-lg leading-relaxed sm:text-xl">
-            Advanced technology, expert orthodontic care, and patient-centred service —
-            comprehensive dental treatments for your entire family.
+          <p className="mx-auto mt-6 max-w-2xl text-pretty text-lg leading-relaxed hyphens-none sm:text-xl">
+            With advanced technology and patient-centred service, we provide expert
+            dental and orthodontic care for your entire family.
           </p>
-          <p className="mx-auto mt-3 max-w-2xl text-base leading-relaxed opacity-80">
+          <p
+            lang="mr"
+            className="mx-auto mt-3 max-w-2xl text-pretty text-base leading-relaxed opacity-80 hyphens-none"
+          >
             {siteConfig.marathi.heroSubtitle}
           </p>
 
@@ -96,8 +99,11 @@ export function Hero() {
               <p className="font-heading text-lg font-semibold text-[#152d4a]">
                 {siteConfig.doctor.name}
               </p>
-              <p className="text-sm font-medium text-[#3d5a78]">
-                {siteConfig.doctor.credentials} · Orthodontics Specialist
+              <p className="text-sm font-medium leading-snug text-[#3d5a78] hyphens-none">
+                {siteConfig.doctor.credentials}
+              </p>
+              <p className="mt-0.5 text-xs font-medium text-[#3d5a78]/80">
+                {siteConfig.doctor.specialty}
               </p>
             </div>
           </div>

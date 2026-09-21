@@ -241,7 +241,7 @@ async function generateOgImage() {
         Modern Dental Care in Ahilyanagar
       </text>
       <text x="600" y="470" text-anchor="middle" font-family="Arial, sans-serif" font-size="22" fill="#152d4a" opacity="0.6">
-        Dr. Aishwarya Aditya Mestry · BDS, MDS
+        Dr. Aishwarya Mestry · BDS, MDS
       </text>
     </svg>
   `;
