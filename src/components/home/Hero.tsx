@@ -102,9 +102,6 @@ export function Hero() {
               <p className="text-sm font-medium leading-snug text-[#3d5a78] hyphens-none">
                 {siteConfig.doctor.credentials}
               </p>
-              <p className="mt-0.5 text-xs font-medium text-[#3d5a78]/80">
-                {siteConfig.doctor.specialty}
-              </p>
             </div>
           </div>
         </div>
