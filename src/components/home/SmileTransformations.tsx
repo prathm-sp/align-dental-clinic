@@ -11,7 +11,7 @@ export function SmileTransformations() {
         <SectionHeader
           eyebrow="Real Results"
           title="Smile Transformations"
-          description="See the difference expert orthodontic care makes — real patients, real results at Align Dental Clinic."
+          description="See the difference, expert orthodontic care makes — real patients, real results at Align Dental Clinic."
         />
       </AnimatedSection>
 

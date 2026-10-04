@@ -29,7 +29,7 @@ export const siteConfig = {
       "Indian Orthodontic Society",
       "Maharashtra State Dental Council",
     ],
-    bio: "Dr. Aishwarya Mestry is a dedicated dentist with a BDS from K.B.H. Dental College and Hospital, Nashik, and an MDS in Orthodontics and Dentofacial Orthopaedics from K M Shah Dental College And Hospital, Vadodara. With a patient-first approach, she provides complete dental care — from preventive and restorative treatment to braces and aligners — combining modern technology with compassionate care for patients of all ages.",
+    bio: "Dr. Aishwarya Mestry is a dedicated dentist with a BDS from K.B.H. Dental College and Hospital, Nashik, and MDS in Orthodontics and Dentofacial Orthopaedics from K M Shah Dental College And Hospital, Vadodara. With a patient-first approach, she provides complete dental care — from preventive and restorative treatment to braces and aligners — combining modern technology with compassionate care for patients of all age.",
     extendedBio:
       "At Align Dental Clinic, Dr. Mestry leads a team committed to making quality dental care accessible and comfortable. From routine check-ups and fillings to root canals, implants, and orthodontic treatments, every patient receives personalised attention in a warm, modern environment equipped with high-quality instruments and digital diagnostics.",
   },
