@@ -172,38 +172,6 @@ export default function AboutPage() {
             ))}
         </div>
 
-        <AnimatedSection className="mt-16">
-          <div className="text-center">
-            <p className="text-xs font-bold uppercase tracking-[0.2em] text-gold-dark">
-              Patient Results
-            </p>
-            <h3 className="font-heading mt-3 text-2xl font-semibold text-navy sm:text-3xl">
-              Smile Transformations
-            </h3>
-            <div className="gold-line mt-5" />
-          </div>
-        </AnimatedSection>
-
-        <div className="mt-10 grid gap-6 sm:grid-cols-2 lg:grid-cols-3">
-          {siteConfig.gallery
-            .filter((image) => image.category === "results")
-            .map((image, index) => (
-              <AnimatedSection key={image.src} delay={index * 0.08} className="h-full">
-                <div className="group flex h-full flex-col overflow-hidden rounded-2xl border border-gold/20 bg-warm-white shadow-[var(--shadow-soft)] transition-all hover:border-gold/40 hover:shadow-[var(--shadow-card)]">
-                  <div className="relative aspect-square w-full overflow-hidden bg-cream">
-                    <Image
-                      src={image.src}
-                      alt={image.alt}
-                      fill
-                      sizes="(max-width: 640px) 100vw, 33vw"
-                      className="object-contain p-3 transition-transform duration-500 group-hover:scale-[1.02]"
-                    />
-                  </div>
-                  <p className="py-4 text-center font-medium text-navy-muted">{image.caption}</p>
-                </div>
-              </AnimatedSection>
-            ))}
-        </div>
       </Section>
     </>
   );

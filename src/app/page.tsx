@@ -23,7 +23,6 @@ export default function HomePage() {
       <Hero />
       <TrustBar />
       <ServicesPreview />
-      <SmileTransformations />
       <Testimonials />
       <AboutTeaser />
       <WhyChooseUs />

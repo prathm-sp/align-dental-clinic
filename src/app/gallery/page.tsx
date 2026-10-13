@@ -6,7 +6,7 @@ import type { Metadata } from "next";
 export const metadata: Metadata = createMetadata({
   title: "Gallery",
   description:
-    "View photos of Align Dental Clinic in Ahilyanagar — modern treatment rooms, welcoming reception, and real patient smile transformations.",
+    "View photos of Align Dental Clinic in Ahilyanagar — modern treatment rooms, welcoming reception.",
   path: "/gallery",
 });
 
@@ -15,8 +15,8 @@ export default function GalleryPage() {
     <>
       <PageHero
         eyebrow="Gallery"
-        title="Our Clinic & Results"
-        description="Explore our modern clinic and see real smile transformations from our orthodontic treatments."
+        title="Our Clinic"
+        description="Explore our modern clinic."
       />
       <GalleryGrid />
     </>

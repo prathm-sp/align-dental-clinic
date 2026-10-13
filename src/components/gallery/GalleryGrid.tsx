@@ -11,7 +11,6 @@ type GalleryImage = (typeof siteConfig.gallery)[number];
 
 const categories = [
   { id: "clinic", label: "Our Clinic", description: "A modern, welcoming space designed for your comfort." },
-  { id: "results", label: "Patient Results", description: "Real smile transformations from our orthodontic treatments." },
 ] as const;
 
 export function GalleryGrid() {
@@ -30,27 +29,9 @@ export function GalleryGrid() {
 
         return (
           <Section key={category.id} variant={catIndex % 2 === 0 ? "white" : "pattern"}>
-            <AnimatedSection>
-              <div className="text-center">
-                <p className="text-xs font-bold uppercase tracking-[0.2em] text-gold-dark">
-                  {category.label}
-                </p>
-                <h2 className="font-heading mt-3 text-3xl font-semibold text-navy sm:text-4xl">
-                  {category.label}
-                </h2>
-                <div className="gold-line mt-5" />
-                <p className="mx-auto mt-5 max-w-2xl text-lg text-navy-muted">
-                  {category.description}
-                </p>
-              </div>
-            </AnimatedSection>
 
             <div
-              className={`mt-12 grid gap-6 ${
-                category.id === "results"
-                  ? "sm:grid-cols-2 lg:grid-cols-3"
-                  : "sm:grid-cols-2"
-              }`}
+              className={'mt-12 grid gap-6 sm:grid-cols-2'}
             >
               {images.map((image, index) => (
                 <AnimatedSection key={image.src} delay={index * 0.08}>
@@ -61,7 +42,7 @@ export function GalleryGrid() {
                   >
                     <div
                       className={`relative w-full overflow-hidden bg-cream ${
-                        category.id === "results" ? "aspect-square" : "aspect-[4/3]"
+                        "aspect-[4/3]"
                       }`}
                     >
                       <Image
@@ -70,7 +51,7 @@ export function GalleryGrid() {
                         fill
                         sizes="(max-width: 640px) 100vw, (max-width: 1024px) 50vw, 33vw"
                         className={`transition-transform duration-500 group-hover:scale-105 ${
-                          category.id === "results" ? "object-contain p-4" : "object-cover object-center"
+                          "object-cover object-center"
                         }`}
                       />
                     </div>
