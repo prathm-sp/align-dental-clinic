@@ -50,7 +50,7 @@ cp .env.example .env.local
 
 | Variable | Description |
 |----------|-------------|
-| `NEXT_PUBLIC_SITE_URL` | Production URL (e.g. `https://aligndentalclinic.com`) |
+| `NEXT_PUBLIC_SITE_URL` | Production URL (e.g. `https://aligndentalclinic.in`) |
 
 ## Deploy
 

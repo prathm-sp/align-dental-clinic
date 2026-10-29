@@ -4,7 +4,7 @@ export const siteConfig = {
   tagline: "Modern Dental Care, Now in Ahilyanagar!",
   description:
     "Comprehensive dental and orthodontic care in Ahilyanagar. Advanced technology, patient-centred service, and treatments for your entire family.",
-  url: process.env.NEXT_PUBLIC_SITE_URL || "https://aligndentalclinic.com",
+  url: process.env.NEXT_PUBLIC_SITE_URL || "https://aligndentalclinic.in",
   locale: "en_IN",
 
   doctor: {

@@ -57,7 +57,7 @@ This tells the site its own public address for SEO, sitemap, and social sharing.
 
    | Name | Value |
    |------|-------|
-   | `NEXT_PUBLIC_SITE_URL` | `https://aligndentalclinic.com` |
+   | `NEXT_PUBLIC_SITE_URL` | `https://aligndentalclinic.in` |
 
 4. Apply to **Production**, **Preview**, and **Development**
 5. Go to **Deployments → Redeploy** (required for env vars to take effect)
@@ -70,7 +70,7 @@ This tells the site its own public address for SEO, sitemap, and social sharing.
    ```
 2. Edit `.env.local`:
    ```
-   NEXT_PUBLIC_SITE_URL=https://aligndentalclinic.com
+   NEXT_PUBLIC_SITE_URL=https://aligndentalclinic.in
    ```
 3. Restart dev server: `npm run dev`
 
@@ -118,7 +118,7 @@ Skip it at launch and add it later when you want SEO insights.
 ### If you want to set it up later
 
 1. Go to [search.google.com/search-console](https://search.google.com/search-console)
-2. Add property: `https://aligndentalclinic.com`
+2. Add property: `https://aligndentalclinic.in`
 3. Choose **HTML tag** verification → copy the `content="..."` value
 4. Add to Vercel: `GOOGLE_SITE_VERIFICATION=that_value`
 5. Redeploy → Verify in Search Console
