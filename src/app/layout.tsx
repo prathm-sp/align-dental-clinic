@@ -3,6 +3,7 @@ import { Header } from "@/components/layout/Header";
 import { createMetadata } from "@/lib/metadata";
 import { getFaqSchema, getOrganizationSchema } from "@/lib/schema";
 import "@/styles/globals.css";
+import { Analytics } from "@vercel/analytics/next";
 import type { Metadata, Viewport } from "next";
 import { Cormorant_Garamond, Outfit } from "next/font/google";
 
@@ -62,6 +63,7 @@ export default function RootLayout({
           {children}
         </main>
         <Footer />
+        <Analytics />
       </body>
     </html>
   );
